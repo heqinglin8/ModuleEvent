@@ -1,6 +1,7 @@
 import org.gradle.internal.jvm.Jvm
 
-apply plugin: 'java'
+//apply plugin: 'java'
+apply plugin: 'java-library'
 
 dependencies {
     compileOnly files(Jvm.current().getToolsJar())
