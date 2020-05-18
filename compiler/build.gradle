@@ -1,7 +1,7 @@
 import org.gradle.internal.jvm.Jvm
 
-//apply plugin: 'java'
-apply plugin: 'java-library'
+apply plugin: 'java'
+apply plugin: 'com.github.dcendents.android-maven'
 
 dependencies {
     compileOnly files(Jvm.current().getToolsJar())
