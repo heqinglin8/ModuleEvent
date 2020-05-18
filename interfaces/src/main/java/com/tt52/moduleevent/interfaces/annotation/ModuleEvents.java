@@ -1,4 +1,4 @@
-package com.tt52.eventbus.base.annotation;
+package com.tt52.moduleevent.interfaces.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

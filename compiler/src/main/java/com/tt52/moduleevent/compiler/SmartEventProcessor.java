@@ -1,9 +1,9 @@
-package com.tt52.eventbus.processor;
+package com.tt52.moduleevent.compiler;
 
 import com.google.auto.service.AutoService;
-import com.tt52.eventbus.base.annotation.EventType;
-import com.tt52.eventbus.base.annotation.ModuleEvents;
-import com.tt52.eventbus.processor.bean.EventInfo;
+import com.tt52.moduleevent.interfaces.annotation.EventType;
+import com.tt52.moduleevent.interfaces.annotation.ModuleEvents;
+import com.tt52.moduleevent.compiler.bean.EventInfo;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.JavaFile;
 import com.squareup.javapoet.MethodSpec;

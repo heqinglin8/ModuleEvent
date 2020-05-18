@@ -1,8 +1,8 @@
 package com.tt52.module1_export.event;
 
 
-import com.tt52.eventbus.base.annotation.EventType;
-import com.tt52.eventbus.base.annotation.ModuleEvents;
+import com.tt52.moduleevent.interfaces.annotation.EventType;
+import com.tt52.moduleevent.interfaces.annotation.ModuleEvents;
 
 /**
  * Created by liaohailiang on 2019-08-30.

@@ -1,4 +1,4 @@
-package com.tt52.eventbus.processor.bean;
+package com.tt52.moduleevent.compiler.bean;
 
 /**
  * Created by liaohailiang on 2019/3/5.

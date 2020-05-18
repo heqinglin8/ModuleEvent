@@ -27,6 +27,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation project(':moduleevent')
-    implementation project(':base')
+    implementation project(':interfaces')
     annotationProcessor project(':compiler')
 }
