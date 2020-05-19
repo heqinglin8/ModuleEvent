@@ -7,6 +7,5 @@ dependencies {
     compileOnly files(Jvm.current().getToolsJar())
     implementation 'com.google.auto.service:auto-service:1.0-rc4'
     implementation 'com.squareup:javapoet:1.11.1'
-    implementation 'com.google.code.gson:gson:2.8.5'
     implementation project(':interfaces')
 }
