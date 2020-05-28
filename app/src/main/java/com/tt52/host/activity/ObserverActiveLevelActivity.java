@@ -1,8 +1,9 @@
 package com.tt52.host.activity;
 
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 import com.tt52.host.LiveEventBusDemo;
 import com.tt52.host.R;

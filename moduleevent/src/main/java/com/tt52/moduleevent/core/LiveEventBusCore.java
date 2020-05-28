@@ -1,20 +1,21 @@
 package com.tt52.moduleevent.core;
 
 import android.app.Application;
-import android.arch.lifecycle.ExternalLiveData;
-import android.arch.lifecycle.Lifecycle;
-import android.arch.lifecycle.LifecycleOwner;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.Observer;
+import androidx.lifecycle.ExternalLiveData;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.MainThread;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.Log;
+
+import androidx.annotation.MainThread;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.Observer;
 
 import com.tt52.moduleevent.ipc.IpcConst;
 import com.tt52.moduleevent.ipc.encode.IEncoder;
@@ -474,7 +475,7 @@ public final class LiveEventBusCore {
             }
 
             @Override
-            public void removeObserver(@NonNull Observer<T> observer) {
+            public void removeObserver(@NonNull Observer<? super T> observer) {
                 super.removeObserver(observer);
                 if (autoClear && !liveData.hasObservers()) {
                     LiveEventBusCore.get().componentBusMap.get(module).remove(key);

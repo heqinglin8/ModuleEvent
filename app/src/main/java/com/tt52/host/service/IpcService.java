@@ -1,15 +1,16 @@
 package com.tt52.host.service;
 
 import android.app.Service;
-import android.arch.lifecycle.Observer;
 import android.content.Intent;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
 import android.widget.Toast;
 
-import com.tt52.moduleevent.LiveEventBus;
+import androidx.annotation.Nullable;
+import androidx.lifecycle.Observer;
+
 import com.tt52.module1_export.event.HelloWorldEvent;
 import com.tt52.module1_export.event.Module1EventsManager;
+import com.tt52.moduleevent.LiveEventBus;
 
 /**
  * Created by liaohailiang on 2019/3/26.

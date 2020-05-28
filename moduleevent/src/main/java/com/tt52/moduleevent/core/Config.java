@@ -1,7 +1,8 @@
 package com.tt52.moduleevent.core;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.tt52.moduleevent.ipc.json.JsonConverter;
 import com.tt52.moduleevent.logger.Logger;

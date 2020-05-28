@@ -1,12 +1,13 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-
+apply from: '../deps.gradle'
 android {
-    compileSdkVersion 27
+    compileSdkVersion build_versions.compile_sdk_version
+    buildToolsVersion build_versions.build_tools
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 27
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
         versionCode 1
         versionName "1.0"
     }
@@ -22,7 +23,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "android.arch.lifecycle:extensions:1.1.1"
-    implementation "android.arch.lifecycle:livedata:1.1.1"
+    implementation deps.lifecycle.extensions
+    implementation deps.support.annotations
     implementation "com.google.code.gson:gson:2.8.5"
 }

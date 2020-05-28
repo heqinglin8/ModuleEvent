@@ -1,12 +1,12 @@
-package android.arch.lifecycle;
+package androidx.lifecycle;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-import static android.arch.lifecycle.Lifecycle.State.CREATED;
-import static android.arch.lifecycle.Lifecycle.State.DESTROYED;
+import static androidx.lifecycle.Lifecycle.State.CREATED;
+import static androidx.lifecycle.Lifecycle.State.DESTROYED;
 
 /**
  * Created by liaohailiang on 2019/1/21.
@@ -16,7 +16,7 @@ public class ExternalLiveData<T> extends MutableLiveData<T> {
     public static final int START_VERSION = LiveData.START_VERSION;
 
     @Override
-    public void observe(@NonNull LifecycleOwner owner, @NonNull Observer<T> observer) {
+    public void observe(@NonNull LifecycleOwner owner, @NonNull Observer<? super T> observer) {
         if (owner.getLifecycle().getCurrentState() == DESTROYED) {
             // ignore
             return;
@@ -57,7 +57,7 @@ public class ExternalLiveData<T> extends MutableLiveData<T> {
 
     class ExternalLifecycleBoundObserver extends LifecycleBoundObserver {
 
-        ExternalLifecycleBoundObserver(@NonNull LifecycleOwner owner, Observer<T> observer) {
+        ExternalLifecycleBoundObserver(@NonNull LifecycleOwner owner, Observer<? super T> observer) {
             super(owner, observer);
         }
 

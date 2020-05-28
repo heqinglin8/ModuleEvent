@@ -1,8 +1,8 @@
 package com.tt52.moduleevent.core;
 
-import android.arch.lifecycle.LifecycleOwner;
-import android.arch.lifecycle.Observer;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.Observer;
 
 /**
  * Created by liaohailiang on 2019-08-28.

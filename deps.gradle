@@ -1,0 +1,27 @@
+/**
+ * Shared file between builds so that they can all use the same dependencies and
+ * maven repositories.
+ **/
+ext.deps = [:]
+
+def build_versions = [:]
+build_versions.min_sdk = 16
+build_versions.target_sdk = '29'
+build_versions.build_tools = "29.0.1"
+build_versions.compile_sdk_version = 29
+ext.build_versions = build_versions
+
+def deps = [:]
+
+def support = [:]
+support.annotations = "androidx.annotation:annotation:1.0.0"
+support.app_compat = "androidx.appcompat:appcompat:1.1.0"
+support.v4 = "androidx.legacy:legacy-support-v4:1.0.0"
+deps.support = support
+
+def lifecycle = [:]
+lifecycle.extensions = "androidx.lifecycle:lifecycle-extensions:2.1.0"
+lifecycle.compiler = "androidx.lifecycle:lifecycle-compiler:2.1.0"
+deps.lifecycle = lifecycle
+
+ext.deps = deps
