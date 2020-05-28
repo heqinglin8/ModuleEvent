@@ -26,9 +26,10 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation (deps.support.app_compat){
-        exclude group: 'androidx.lifecycle'
-    }
+//    implementation (deps.support.app_compat){
+//        exclude group: 'androidx.lifecycle'
+//    }
+    implementation (deps.support.app_compat)
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
 
     //For Lifecycles, LiveData, and ViewModel
