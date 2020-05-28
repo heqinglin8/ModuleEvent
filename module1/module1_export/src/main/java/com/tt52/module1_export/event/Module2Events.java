@@ -23,6 +23,6 @@ public class Module2Events {
     public static final String EVENT3 = "event3";
 
     //不指定消息类型，那么消息的类型默认为Object
-    public static final String EVENT4 = "event1";
+    public static final String EVENT4 = "event4";
 
 }

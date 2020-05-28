@@ -22,7 +22,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api "android.arch.lifecycle:extensions:1.1.1"
-    api "android.arch.lifecycle:livedata:1.1.1"
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation "android.arch.lifecycle:livedata:1.1.1"
     implementation "com.google.code.gson:gson:2.8.5"
 }
