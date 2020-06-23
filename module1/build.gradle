@@ -38,5 +38,5 @@ dependencies {
 
     implementation deps.lifecycle.extensions
     implementation project(':moduleevent')
-    implementation project(':module1:module1_export')
+    implementation project(':export:module1_export')
 }

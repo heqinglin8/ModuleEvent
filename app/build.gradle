@@ -48,5 +48,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-contrib:3.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-idling-resource:3.0.2'
 
-    implementation project(':module1:module1_export')
+    implementation project(':export:module1_export')
 }

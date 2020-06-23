@@ -8,8 +8,8 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.Observer;
 
+import com.tt52.module1_export.Module1EventsManager;
 import com.tt52.module1_export.event.HelloWorldEvent;
-import com.tt52.module1_export.event.Module1EventsManager;
 import com.tt52.moduleevent.LiveEventBus;
 
 /**

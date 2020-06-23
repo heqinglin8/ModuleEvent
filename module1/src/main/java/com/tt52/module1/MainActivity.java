@@ -10,9 +10,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 
+import com.tt52.module1_export.Module1EventsManager;
 import com.tt52.moduleevent.LiveEventBus;
 import com.tt52.module1_export.event.HelloWorldEvent;
-import com.tt52.module1_export.event.Module1EventsManager;
 
 public class MainActivity extends AppCompatActivity {
     public static final String KEY_TEST_IN_APP_MSG = "key_test_in_app_msg";
